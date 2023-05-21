@@ -1,21 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
 
-    <!--Aqui estoy haciendo una conexión con Bootstrap en la version 5.3, nos damos cuenta que si se esta aplicando la conexión pq la fuente cambia, si no esta conectado entonces mostrará la fuente por defecto del sistema, una Times new roman-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <!--Termino la conexión-->
-    <!--Aqui estoy haciendo conexion a mi estilo interno CSS, PRIMERO se enlaza el documento de Bootstrap y luego el documento de estilos propios-->
-    <link href="./assets/styles/style.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+
+  <!--Aqui estoy haciendo una conexión con Bootstrap en la version 5.3, nos damos cuenta que si se esta aplicando la conexión pq la fuente cambia, si no esta conectado entonces mostrará la fuente por defecto del sistema, una Times new roman-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!--Termino la conexión-->
+  <!--Aqui estoy haciendo conexion a mi estilo interno CSS, PRIMERO se enlaza el documento de Bootstrap y luego el documento de estilos propios-->
+  <link href="./assets/styles/style.css" rel="stylesheet">
 
 </head>
+
 <body>
-    <!--Aqui estoy agregando un codigo de Navbar de Bootstrap-->
-    <!--<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+  <div class="container">
+    <!--Este es un div padre que engloba todo sobre lo que se va a trabajar y se le de un formato que no este pegado a la ventana, estos nombres de clases ya estan definidos por Bootstrap, hay que leer la documentación de Bootstrap-->
+
+    <!--Barra de navegación-->
+    <div class="containerNavegacion"><!--Este es un div padre que engloba toda la barra de navegación-->
+      <div class="row"><!--Defino filas-->
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <!--Aqui estoy diciendo de acuerdo a los breakpoint cuantas columnas van a haber-->
+          <div class="barraNavegacion"><!--Etiqueto individualmente mi barra de navegacion (p) dandole una clase-->
+            <p>Barra de Navegación</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!--Cierra mi contenedor de barra de navegación-->
+
+    <!--Catalogo de imagenes-->
+    <div class="containerImagenes"><!--Este es un div padre que engloba todas las imagenes-->
+      <div class="row"><!--Defino filas para todas mis imagenes-->
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <!--Aqui estoy diciendo de acuerdo a los breakpoint cuantas columnas van a haber-->
+          <div class="imagenes"><!--Etiqueto individualmente mi imagen (p) dandole una clase-->
+            <p>Imagen 1</p>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="imagenes">
+            <p>Imagen 2</p>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="imagenes">
+            <p>Imagen 3</p>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="imagenes">
+            <p>Imagen 4</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--Cierra mi contenedor de imagenes-->
+
+    <!--Parrafos-->
+    <!--Este es un div padre que engloba todas los parrafos-->
+    <div class="containerParrafos">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="parrafos">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident corporis nisi deserunt. Impedit
+              suscipit,
+              aliquid ratione sed quisquam consequatur, natus ex, veniam officiis facilis porro saepe nesciunt fugit
+              cumque
+              aut.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="parrafos">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident corporis nisi deserunt. Impedit
+              suscipit,
+              aliquid ratione sed quisquam consequatur, natus ex, veniam officiis facilis porro saepe nesciunt fugit
+              cumque
+              aut.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--Cierra mi contenedor de parrafos-->
+
+    <!--Pie de pagina-->
+    <!--Este es un div padre que engloba el footer-->
+    <div class="containerFooter">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="footer">
+            <p>Footer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Cierra mi contenedor de footer-->
+  </div> <!--Aqui cierra mi contenedor general-->
+
+
+  <!--Aqui estoy agregando un codigo de Navbar de Bootstrap-->
+  <!--<nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Cumpleaños Fer</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,10 +147,10 @@
           </div>
         </div>
       </nav>-->
-      <!--Aqui termina el Navbar de Bootstrap-->
+  <!--Aqui termina el Navbar de Bootstrap-->
 
-      <!--Aqui estoy agreando un FORMULARIO de Bootstrap-->
-      <!--<form>
+  <!--Aqui estoy agreando un FORMULARIO de Bootstrap-->
+  <!--<form>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -70,14 +166,14 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>-->
-      <!--Aqui termina codigo de formulario-->
-      
-      <!--Aqui estoy agreando un botton de Bootstrap-->
-      <!--<button type="button" class="btn btn-danger">AUTODESTRUCCION</button>-->
-      <!--Aqui termina codigo de boton-->
+  <!--Aqui termina codigo de formulario-->
 
-      <!--Aqui estoy agregando un Carrusel de Bootstrap-->
-      <!--<div id="carouselExample" class="carousel slide">
+  <!--Aqui estoy agreando un botton de Bootstrap-->
+  <!--<button type="button" class="btn btn-danger">AUTODESTRUCCION</button>-->
+  <!--Aqui termina codigo de boton-->
+
+  <!--Aqui estoy agregando un Carrusel de Bootstrap-->
+  <!--<div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="https://soyunperro.com/wp-content/uploads/perrocontento.jpg" class="d-block w-100" alt="Imagen1">
@@ -98,9 +194,9 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>-->
-      <!--Aqui termina el carrusel de Bootstrap-->
+  <!--Aqui termina el carrusel de Bootstrap-->
 
-      <div class="container">
+  <!--<div class="container">
         <h1>Contenedor normal</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam reiciendis eligendi iusto, rerum odit aut odio nostrum perspiciatis. Animi itaque eos modi nihil officiis quibusdam dolores architecto veritatis? Nulla, inventore?
@@ -118,10 +214,40 @@
       <div class="container-md">
         <h1>Contenedor con breakpoint medium</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ratione nemo quisquam cumque numquam ut dolor suscipit aspernatur quasi, molestias quod eveniet repellat corrupti aperiam sapiente amet repudiandae ducimus vel.</p>
-      </div>
-    
-    <!--Aqui-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <!--Termino la conexión-->
+      </div>-->
+
+  <!--Aqui-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <!--Termino la conexión-->
 </body>
+
 </html>
+<!-- Notas de la sesion
+    
+    
+    Formas para trabajar con Bootstrap en nuestro documento
+
+    1- Agregando el CDN (Content Delivery Network)
+    2- Descargar los archivos y referenciarlos como hojas de estilo
+    3- Copiando y pegando la estructura del documento HTML con los links ya incluidos (Quick Start)
+    
+    
+
+    Dos caracteristicas fundamentales de Bootstrap son:
+
+    - Grid
+    El sistema de cuadrícula de Bootstrap se basa en una matriz de 12 espacios, lo que significa que cada fila debe contener 12 espacios. 
+    En Bootstrap usamos la clase col para especificar las columnas, y la clase row para las filas.
+    Nosotros podemos definir columnas para la vista de cualquier dispositivo (celulares, tablets o pantallas grandes), por lo que primero diseniamos la vista en dispositivos pequenios y agregaremos mas columnas en vistas mas grandes.
+
+    Siempre que trabamos con Grid, lo hacemos dentro de un container (div).
+
+
+
+    - Containers
+    El contenedor es un elemento de bloque que se utiliza para contener otros elementos. El contenedor tiene un ancho fijo y se centra automáticamente en la pantalla. El contenedor se utiliza para agrupar elementos de bloque y crear columnas de contenido.
+
+
+    -->

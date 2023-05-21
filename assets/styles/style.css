@@ -1,8 +1,27 @@
-#carouselExample{
-    margin:auto;
-    width:500px;
+body{   /*Estilos para el body*/
+    text-align: center;
+    background-color: darkgray;
 }
+.barraNavegacion{
+    background-color: blue;
+    color: aliceblue;
+ }
+ 
+ .imagenes{
+    background-color: orangered;
+    border: 1px solid black;
+ }
+ 
+ 
+ .parrafos{
+    background-color: violet;
+ }
+ 
+ .footer{
+    background-color: green;
+ }
 
-button{
-    margin: auto;
-}
+ p{
+    padding: 50px;
+    border: 1px solid black;
+ }
